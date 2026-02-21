@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO | Admin Panel</title>
+    <style>
+        body { background: #000; color: #ff0000; font-family: 'Courier New', monospace; padding: 20px; }
+        .log-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #300; padding: 12px; text-align: left; font-size: 0.85em; }
+        th { background: #1a0000; color: #ff0000; text-transform: uppercase; }
+        tr:hover { background: #100; }
+        .live-status { display: inline-block; width: 10px; height: 10px; background: #00ff41; border-radius: 50%; margin-right: 10px; box-shadow: 0 0 10px #00ff41; }
+    </style>
+</head>
+<body>
+    <h2><span class="live-status"></span>SİSTEM LOGLARI - YÖNETİCİ PANELİ</h2>
+    <table class="log-table">
+        <thead>
+            <tr>
+                <th>Cihaz İsmi</th>
+                <th>İşletim Sistemi</th>
+                <th>Tarayıcı (Agent)</th>
+                <th>IP Adresi</th>
+                <th>Zaman</th>
+            </tr>
+        </thead>
+        <tbody id="logBody">
+            <tr style="color: #00ff41;">
+                <td>Neo-Main-Machine</td>
+                <td>Kali Linux 2024.1</td>
+                <td>Mozilla/5.0 (X11; Linux x86_64)</td>
+                <td>LOCAL_ADMIN</td>
+                <td>ŞİMDİ</td>
+            </tr>
+            </tbody>
+    </table>
+</body>
+</html>
