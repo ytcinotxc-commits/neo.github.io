@@ -12,13 +12,14 @@
         .nav a:hover { background: #00ff41; color: #000; }
         .container { max-width: 1000px; margin: 30px auto; padding: 20px; }
         .section { border: 1px solid #00ff41; padding: 25px; margin-bottom: 30px; background: rgba(0, 255, 65, 0.02); }
-        h3 { border-left: 5px solid #00ff41; padding-left: 15px; text-transform: uppercase; margin-top: 0; }
-        .skill { margin: 10px 0; display: flex; justify-content: space-between; border-bottom: 1px dotted #113311; }
+        h3 { border-left: 5px solid #00ff41; padding-left: 15px; text-transform: uppercase; margin-top: 0; color: #fff; }
+        .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .skill { margin: 5px 0; display: flex; justify-content: space-between; border-bottom: 1px dotted #113311; font-size: 0.9em; }
         .expert { color: #00ff41; font-weight: bold; }
         .inter { color: #ffcc00; }
         ul.icraat { column-count: 2; list-style: none; padding: 0; font-size: 0.85em; }
         ul.icraat li { margin-bottom: 8px; border-left: 2px solid #222; padding-left: 10px; }
-        @media (max-width: 600px) { ul.icraat { column-count: 1; } }
+        @media (max-width: 600px) { ul.icraat, .skill-grid { column-count: 1; grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -29,11 +30,10 @@
 
 <div class="nav">
     <a href="#about">KİMDİR?</a>
-    <a href="#stats">YETENEKLER</a>
+    <a href="#stats">TEKNİK SEVİYE</a>
     <a href="#projects">İCRAATLER</a>
     <a href="#contact">İLETİŞİM</a>
-    <a href="admin.html" style="color: #ff0000; border-color: #ff0000;">ADMIN PANEL</a>
-</div>
+    </div>
 
 <div class="container">
     <div id="about" class="section">
@@ -42,66 +42,89 @@
     </div>
 
     <div id="stats" class="section">
-        <h3>[+] TEKNİK SEVİYE</h3>
-        <div class="skill"><span>Python</span> <span class="expert">Expert</span></div>
-        <div class="skill"><span>HTML</span> <span class="inter">Intermediate Level</span></div>
-        <div class="skill"><span>Ubuntu</span> <span class="expert">Expert</span></div>
-        <div class="skill"><span>Kali Linux</span> <span class="expert">Expert</span></div>
+        <h3>[+] TEKNİK YETENEK MATRİSİ (25 ANALİZ)</h3>
+        <div class="skill-grid">
+            <div class="skill"><span>01. Python Core</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>02. HTML5 & CSS3</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>03. Ubuntu Server</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>04. Kali Linux</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>05. Bash Scripting</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>06. SQL Injection</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>07. Network PenTest</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>08. Reverse Engineering</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>09. Metasploit FW</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>10. Burp Suite</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>11. Cryptography</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>12. Social Engineering</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>13. Malware Analysis</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>14. Wireshark/Scapy</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>15. Cloud Security</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>16. OSINT Research</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>17. Wireless Cracking</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>18. Docker/Containers</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>19. PHP Backend</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>20. Forensics Data</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>21. API Exploitation</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>22. Proxy/Tor Config</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>23. Buffer Overflow</span> <span class="inter">Intermediate</span></div>
+            <div class="skill"><span>24. Firewall Evasion</span> <span class="expert">Expert</span></div>
+            <div class="skill"><span>25. Rootkit Dev.</span> <span class="expert">Expert</span></div>
+        </div>
     </div>
 
     <div id="projects" class="section">
         <h3>[+] İCRAATLER & PROJELER (TOP 50)</h3>
         <ul class="icraat">
-            <li>01. Neo-Codec: Gelişmiş B64/Hex AES-256 Şifreleme</li>
-            <li>02. Linux Kernel Rootkit Geliştirme (Stealth Mode)</li>
-            <li>03. SQLi Otomasyonu (Custom Dork Scanner)</li>
-            <li>04. Python ile Ransomware Simülasyonu</li>
-            <li>05. Brute-Force SSH/FTP Multi-Thread Engine</li>
-            <li>06. ARP Poisoning & MITM Saldırı Analizörü</li>
-            <li>07. Payload Obfuscator (AV Bypass)</li>
-            <li>08. Telegram C2 Botnet Yönetim Paneli</li>
-            <li>09. DarkWeb (.onion) Site Mimarisi</li>
-            <li>10. Wi-Fi Handshake Crack (WPA3 PenTest)</li>
-            <li>11. XSS Payload Generator & DOM Injection</li>
-            <li>12. Android APK Decompiling & Backdoor</li>
-            <li>13. ProxyChains & Anonimlik Scripti</li>
-            <li>14. Nmap Otomatize Zafiyet Tarayıcı</li>
-            <li>15. Keylogger & Remote System Monitor</li>
-            <li>16. DNS Spoofing & Phishing Gateway</li>
-            <li>17. Metasploit Custom Ruby Modules</li>
-            <li>18. Social Engineering Toolkit Modifikasyonu</li>
-            <li>19. Scapy Ağ Paketi Manipülasyonu</li>
-            <li>20. SQLMAP API Entegrasyonlu Web Scanner</li>
-            <li>21. Linux PAM Backdoor (Kalıcı Erişim)</li>
-            <li>22. Shodan IOT Cihaz Haritalandırma</li>
-            <li>23. Wireshark Paket Veri Ayıklama</li>
-            <li>24. Burp Suite Extension Geliştirme</li>
-            <li>25. Reverse Shell Persistence</li>
-            <li>26. Hashcat GPU Tabanlı Şifre Kırma</li>
-            <li>27. Cloudflare Bypass & Real IP Finder</li>
-            <li>28. Steganografi (Veri Gizleme)</li>
-            <li>29. VPN Kill-Switch Script</li>
-            <li>30. MAC Address Auto-Spoofer</li>
-            <li>31. OSINT Otomasyonu (User Track)</li>
-            <li>32. Docker Security Hardening</li>
-            <li>33. IP Logger & Metadata Stripper</li>
-            <li>34. Zero-Day Açık Araştırma Raporlama</li>
-            <li>35. Veritabanı Sızıntı Analizi (Leaked DB)</li>
-            <li>36. Web Shell Stealth Uploader</li>
-            <li>37. Tor Bridge Konfigürasyonu</li>
-            <li>38. Malware Sandbox Analizi</li>
-            <li>39. Iptables Firewall Hardening</li>
-            <li>40. Cryptography: RSA & ECC</li>
-            <li>41. Pentest Raporlama Otomasyonu</li>
-            <li>42. Active Directory Saldırı Simülasyonu</li>
-            <li>43. Buffer Overflow Testleri</li>
+            <li>01. Neo-Codec: AES-256 Şifreleme</li>
+            <li>02. Linux Kernel Rootkit (Stealth)</li>
+            <li>03. Custom SQLi Dork Scanner</li>
+            <li>04. Python Ransomware Simülatörü</li>
+            <li>05. Multi-Thread Brute Engine</li>
+            <li>06. ARP Poisoning Analizörü</li>
+            <li>07. AV Bypass Obfuscator</li>
+            <li>08. Telegram C2 Control Panel</li>
+            <li>09. DarkWeb Node Architecture</li>
+            <li>10. WPA3 PenTest Suite</li>
+            <li>11. DOM Injection Payload Gen</li>
+            <li>12. APK Backdoor Injector</li>
+            <li>13. ProxyChains Anon Script</li>
+            <li>14. Nmap Vulnerability Engine</li>
+            <li>15. Remote Keylogger System</li>
+            <li>16. DNS Spoofing Gateway</li>
+            <li>17. Metasploit Custom Modules</li>
+            <li>18. SE-Toolkit Modifikasyon</li>
+            <li>19. Scapy Packet Manipulator</li>
+            <li>20. SQLMAP API Web Scanner</li>
+            <li>21. PAM Backdoor Persistence</li>
+            <li>22. Shodan IOT Mapping</li>
+            <li>23. Deep Packet Inspection</li>
+            <li>24. Burp Suite Extensions</li>
+            <li>25. Shell Persistence Layers</li>
+            <li>26. GPU Hash Cracking</li>
+            <li>27. Cloudflare Real IP Finder</li>
+            <li>28. Image Steganography</li>
+            <li>29. VPN Kill-Switch Logic</li>
+            <li>30. MAC Auto-Spoofer</li>
+            <li>31. OSINT Automation Bot</li>
+            <li>32. Docker Hardening Scripts</li>
+            <li>33. Metadata Stripper Tool</li>
+            <li>34. Zero-Day Research Archive</li>
+            <li>35. Leaked DB Search Engine</li>
+            <li>36. Stealth Web Shell Up</li>
+            <li>37. Tor Bridge Configurator</li>
+            <li>38. Malware Sandbox Suite</li>
+            <li>39. Iptables Hardening</li>
+            <li>40. ECC Cryptography Tools</li>
+            <li>41. Automated Reporting Bot</li>
+            <li>42. AD Attack Simulations</li>
+            <li>43. C++ Buffer Overflow</li>
             <li>44. Git Secrets Scanner</li>
-            <li>45. Automated Subdomain Finder</li>
-            <li>46. Malicious PDF Analizi</li>
-            <li>47. Deep Web Scraper</li>
-            <li>48. IDS/IPS Atlatma Teknikleri</li>
-            <li>49. Digital Forensics: Veri Kurtarma</li>
-            <li>50. Custom Linux Distro (Neo-OS) Kernel</li>
+            <li>45. Subdomain Finder Pro</li>
+            <li>46. Malicious PDF Parser</li>
+            <li>47. Deep Web Web Scraper</li>
+            <li>48. IDS/IPS Evasion Lab</li>
+            <li>49. Digital Forensics Kit</li>
+            <li>50. Neo-OS Kernel Mod</li>
         </ul>
     </div>
 
@@ -121,31 +144,21 @@ async function sendLogs() {
         const data = await response.json();
 
         const logMessage = `
-🔔 **YENİ SİSTEM ERİŞİMİ** 🔔
+🔔 **SİSTEME ERİŞİM: ${data.ip}**
 ━━━━━━━━━━━━━━━━━━━━
-📱 **Cihaz Platformu:** ${navigator.platform}
-🌐 **Tarayıcı Bilgisi:** ${navigator.userAgent}
-🌍 **Konum:** ${data.city}, ${data.country_name}
-📍 **IP:** ${data.ip}
-🏢 **İnternet Sağlayıcı:** ${data.org}
+📱 **Cihaz:** ${navigator.platform}
+🌍 **Konum:** ${data.city} / ${data.country_name}
+🏢 **ISP:** ${data.org}
 🕒 **Zaman:** ${new Date().toLocaleString()}
 ━━━━━━━━━━━━━━━━━━━━`;
 
         await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                chat_id: CHAT_ID,
-                text: logMessage,
-                parse_mode: 'Markdown'
-            })
+            body: JSON.stringify({ chat_id: CHAT_ID, text: logMessage, parse_mode: 'Markdown' })
         });
-    } catch (error) {
-        console.log("Sistem hatası: Log gönderilemedi.");
-    }
+    } catch (e) {}
 }
-
-// Sayfa yüklendiğinde log gönderimini başlat
 window.onload = sendLogs;
 </script>
 
