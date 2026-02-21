@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO | Mainframe</title>
+    <style>
+        body { background: #0a0a0a; color: #00ff41; font-family: 'Courier New', monospace; line-height: 1.6; margin: 0; }
+        .header { border-bottom: 1px solid #00ff41; padding: 20px; text-align: center; background: #000; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: center; gap: 20px; background: #050505; padding: 10px; border-bottom: 1px solid #00ff41; }
+        .nav a { color: #00ff41; text-decoration: none; font-size: 0.9em; border: 1px solid #00ff41; padding: 5px 15px; transition: 0.3s; }
+        .nav a:hover { background: #00ff41; color: #000; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 20px; }
+        .section { border: 1px solid #00ff41; padding: 25px; margin-bottom: 30px; background: rgba(0, 255, 65, 0.02); }
+        h3 { border-left: 5px solid #00ff41; padding-left: 15px; text-transform: uppercase; margin-top: 0; }
+        .skill { margin: 10px 0; display: flex; justify-content: space-between; border-bottom: 1px dotted #113311; }
+        .expert { color: #00ff41; font-weight: bold; }
+        .inter { color: #ffcc00; }
+        ul.icraat { column-count: 2; list-style: none; padding: 0; font-size: 0.85em; }
+        ul.icraat li { margin-bottom: 8px; border-left: 2px solid #222; padding-left: 10px; }
+        @media (max-width: 600px) { ul.icraat { column-count: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 style="margin:0; letter-spacing: 15px;">NEO SYSTEM</h1>
+</div>
+
+<div class="nav">
+    <a href="#about">KİMDİR?</a>
+    <a href="#stats">YETENEKLER</a>
+    <a href="#projects">İCRAATLER</a>
+    <a href="#contact">İLETİŞİM</a>
+    <a href="admin.html" style="color: #ff0000; border-color: #ff0000;">ADMIN PANEL</a>
+</div>
+
+<div class="container">
+    <div id="about" class="section">
+        <h3>[+] NEO KİMDİR?</h3>
+        <p>Selamün Aleyküm ben namıdeger <b>Neo</b>. Sanal ortama 2019 da atılmış biriyim şuana kadar çok şey yaptım kendi tagımında sahibiyim icraatlerim projeler kısmında yazıyor olacaktır unutmayın benden büyügün 99 adı var ben sarsılırım ama yıkılmam.</p>
+    </div>
+
+    <div id="stats" class="section">
+        <h3>[+] TEKNİK SEVİYE</h3>
+        <div class="skill"><span>Python</span> <span class="expert">Expert</span></div>
+        <div class="skill"><span>HTML</span> <span class="inter">Intermediate Level</span></div>
+        <div class="skill"><span>Ubuntu</span> <span class="expert">Expert</span></div>
+        <div class="skill"><span>Kali Linux</span> <span class="expert">Expert</span></div>
+    </div>
+
+    <div id="projects" class="section">
+        <h3>[+] İCRAATLER & PROJELER (TOP 50)</h3>
+        <ul class="icraat">
+            <li>01. Neo-Codec: Gelişmiş B64/Hex AES-256 Şifreleme</li>
+            <li>02. Linux Kernel Rootkit Geliştirme (Stealth Mode)</li>
+            <li>03. SQLi Otomasyonu (Custom Dork Scanner)</li>
+            <li>04. Python ile Ransomware Simülasyonu</li>
+            <li>05. Brute-Force SSH/FTP Multi-Thread Engine</li>
+            <li>06. ARP Poisoning & MITM Saldırı Analizörü</li>
+            <li>07. Payload Obfuscator (AV Bypass)</li>
+            <li>08. Telegram C2 Botnet Yönetim Paneli</li>
+            <li>09. DarkWeb (.onion) Site Mimarisi</li>
+            <li>10. Wi-Fi Handshake Crack (WPA3 PenTest)</li>
+            <li>11. XSS Payload Generator & DOM Injection</li>
+            <li>12. Android APK Decompiling & Backdoor</li>
+            <li>13. ProxyChains & Anonimlik Scripti</li>
+            <li>14. Nmap Otomatize Zafiyet Tarayıcı</li>
+            <li>15. Keylogger & Remote System Monitor</li>
+            <li>16. DNS Spoofing & Phishing Gateway</li>
+            <li>17. Metasploit Custom Ruby Modules</li>
+            <li>18. Social Engineering Toolkit Modifikasyonu</li>
+            <li>19. Scapy Ağ Paketi Manipülasyonu</li>
+            <li>20. SQLMAP API Entegrasyonlu Web Scanner</li>
+            <li>21. Linux PAM Backdoor (Kalıcı Erişim)</li>
+            <li>22. Shodan IOT Cihaz Haritalandırma</li>
+            <li>23. Wireshark Paket Veri Ayıklama</li>
+            <li>24. Burp Suite Extension Geliştirme</li>
+            <li>25. Reverse Shell Persistence</li>
+            <li>26. Hashcat GPU Tabanlı Şifre Kırma</li>
+            <li>27. Cloudflare Bypass & Real IP Finder</li>
+            <li>28. Steganografi (Veri Gizleme)</li>
+            <li>29. VPN Kill-Switch Script</li>
+            <li>30. MAC Address Auto-Spoofer</li>
+            <li>31. OSINT Otomasyonu (User Track)</li>
+            <li>32. Docker Security Hardening</li>
+            <li>33. IP Logger & Metadata Stripper</li>
+            <li>34. Zero-Day Açık Araştırma Raporlama</li>
+            <li>35. Veritabanı Sızıntı Analizi (Leaked DB)</li>
+            <li>36. Web Shell Stealth Uploader</li>
+            <li>37. Tor Bridge Konfigürasyonu</li>
+            <li>38. Malware Sandbox Analizi</li>
+            <li>39. Iptables Firewall Hardening</li>
+            <li>40. Cryptography: RSA & ECC</li>
+            <li>41. Pentest Raporlama Otomasyonu</li>
+            <li>42. Active Directory Saldırı Simülasyonu</li>
+            <li>43. Buffer Overflow Testleri</li>
+            <li>44. Git Secrets Scanner</li>
+            <li>45. Automated Subdomain Finder</li>
+            <li>46. Malicious PDF Analizi</li>
+            <li>47. Deep Web Scraper</li>
+            <li>48. IDS/IPS Atlatma Teknikleri</li>
+            <li>49. Digital Forensics: Veri Kurtarma</li>
+            <li>50. Custom Linux Distro (Neo-OS) Kernel</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="section">
+        <h3>[+] İLETİŞİM</h3>
+        <p>Signal / WhatsApp: <span style="color: #fff;">+14388193125</span></p>
+    </div>
+</div>
+
+</body>
+</html>
